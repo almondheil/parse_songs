@@ -37,3 +37,5 @@ timestamps:
   # I don't care how the times are formatted. just put them in sequential order
   - '1:00:03': example of something that has an hour component
 ```
+
+The file is also in this repo because I might as well track it. Good file history doesn't hurt

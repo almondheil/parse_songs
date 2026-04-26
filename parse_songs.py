@@ -2,7 +2,6 @@ import sys
 from argparse import ArgumentParser
 
 import yaml
-from colorama import Fore, Back, Style
 
 def only_songs(timestamp_list):
     songs = dict()
@@ -30,13 +29,13 @@ def only_songs(timestamp_list):
             exit(1)
 
         duration = songs[title]
-        print(f'  {Style.BRIGHT}{Fore.CYAN}{title}{Style.RESET_ALL}: {duration[0]}-{duration[1]}')
+        print(f'  {title}: {duration[0]}-{duration[1]}')
 
 def all_things(timestamp_list):
     print('all items in the list:')
     for ts in timestamp_list:
         (time, event) = next(iter(ts.items()))
-        print(f'  {time:>7} - {Style.BRIGHT}{Fore.CYAN}{event}{Style.RESET_ALL}')
+        print(f'  {time:>7} - {event}')
 
 def main():
     parser = ArgumentParser()

@@ -15,6 +15,12 @@ It will print:
 - timestamps for each song identified with a `START` and `END` event
 - a pretty list of timestamps for the whole range, including songs
 
+## Installing
+
+I used uv, so you can `uv run parse_songs.py` and it will do the dependencies for the project.
+
+The actual dependencies I wanted are in `pyproject.toml`, so you can install them some other way. That's allowed
+
 ## File format
 
 I took my notes in a YAML format that looks like this:
